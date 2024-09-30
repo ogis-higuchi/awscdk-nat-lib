@@ -8,9 +8,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   depsUpgradeOptions: {
     workflow: false,
   },
-  githubOptions: {
-    pullRequestLint: false,
-  },
   pullRequestTemplate: false,
   releaseTrigger: {
     isManual: false,
