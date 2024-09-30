@@ -8,6 +8,18 @@ const project = new awscdk.AwsCdkConstructLibrary({
   depsUpgradeOptions: {
     workflow: false,
   },
+  githubOptions: {
+    pullRequestLintOptions: {
+      semanticTitleOptions: {
+        types: [
+          'chore',
+          'docs',
+          'feat',
+          'fix',
+        ],
+      },
+    },
+  },
   pullRequestTemplate: false,
   releaseTrigger: {
     isManual: false,

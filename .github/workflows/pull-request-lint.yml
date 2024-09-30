@@ -22,7 +22,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           types: |-
+            chore
+            docs
             feat
             fix
-            chore
           requireScope: false
