@@ -20,7 +20,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
       },
     },
   },
-  pullRequestTemplate: false,
   releaseTrigger: {
     isManual: false,
     isContinuous: false,
