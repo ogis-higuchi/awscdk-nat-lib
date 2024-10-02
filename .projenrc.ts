@@ -6,7 +6,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
 
   buildWorkflow: false,
   depsUpgradeOptions: {
-    workflow: false,
+    workflowOptions: {
+      schedule: javascript.UpgradeDependenciesSchedule.NEVER,
+    },
   },
   githubOptions: {
     pullRequestLintOptions: {
