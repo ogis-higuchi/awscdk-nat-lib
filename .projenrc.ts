@@ -1,4 +1,5 @@
 import { awscdk, javascript } from 'projen';
+import { Job } from 'projen/lib/github/workflows-model';
 import {
   contributorStatement,
   pullRequestTemplateContents,
@@ -52,5 +53,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'https://www.ogis-ri.co.jp',
   authorOrganization: true,
 });
+
+// upgrade-main workflow's 'pr' job
+const upgradeMainPrJob = project.upgradeWorkflow!.workflows[0].getJob('pr') as Job;
+// Add contributor statement.
+// This is a workaround for linting the PR created by human action (workflow_dispatch).
+// When we enable the workflow to be triggered automatically, not manually, this workaround would be deleted.
+upgradeMainPrJob.steps[4].with!.body += `\n${contributorStatement}`;
 
 project.synth();
