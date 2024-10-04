@@ -4,7 +4,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: '@ogis-rd/awscdk-nat-lib',
   description: 'AWS CDK constructs for NAT devices',
 
-  buildWorkflow: false,
   depsUpgradeOptions: {
     workflowOptions: {
       schedule: javascript.UpgradeDependenciesSchedule.NEVER,
