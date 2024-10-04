@@ -13,6 +13,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     },
   },
   githubOptions: {
+    mergify: false,
     pullRequestLintOptions: {
       contributorStatement,
       semanticTitleOptions: {
