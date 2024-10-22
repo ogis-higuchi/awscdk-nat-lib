@@ -54,4 +54,20 @@ describe('EIP', () => {
 
     template.resourceCountIs('AWS::EC2::EIP', 0);
   });
+
+  test('import with allocation ID', () => {
+    const allocationId = 'eipalloc-123456789abcdefgh';
+
+    const eip = Eip.fromAllocationId(stack, 'Eip', allocationId);
+
+    expect(Eip.isEip(eip)).toBe(false);
+    expect(eip.eipAllocationId).toBe(allocationId);
+    expect(() => {
+      eip.eipPublicIp;
+    }).toThrow('eipPublicIp is not provided for the imported Eip.');
+
+    const template = Template.fromStack(stack);
+
+    template.resourceCountIs('AWS::EC2::EIP', 0);
+  });
 });

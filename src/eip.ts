@@ -69,6 +69,20 @@ export class Eip extends EipBase {
   }
 
   /**
+   * Import an unowned EIP from allocation ID.
+   */
+  public static fromAllocationId(scope: Construct, id: string, allocationId: string): IEip {
+    class Import extends EipBase {
+      public readonly eipAllocationId = allocationId;
+
+      public get eipPublicIp(): string {
+        throw new Error('eipPublicIp is not provided for the imported Eip.');
+      };
+    }
+    return new Import(scope, id);
+  }
+
+  /**
    * Return true if the object is an EIP.
    */
   public static isEip(x: any): x is Eip {
