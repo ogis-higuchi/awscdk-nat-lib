@@ -59,6 +59,7 @@ describe('PublicNatGateway', () => {
   test('create with existing EIP', () => {
     const eip = Eip.fromEipAttributes(stack, 'Eip', {
       eipAllocationId: 'eipalloc-123456789abcdefgh',
+      eipPublicIp: '1.2.3.4',
     });
 
     new PublicNatGateway(stack, 'PublicNatGateway', {

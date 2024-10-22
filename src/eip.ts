@@ -36,7 +36,7 @@ export interface EipAttributes {
   /**
    * The Elastic IP address.
    */
-  readonly eipPublicIp?: string;
+  readonly eipPublicIp: string;
 }
 
 abstract class EipBase extends core.Resource implements IEip {
@@ -56,14 +56,7 @@ export class Eip extends EipBase {
   public static fromEipAttributes(scope: Construct, id: string, attrs: EipAttributes): IEip {
     class Import extends EipBase {
       public readonly eipAllocationId = attrs.eipAllocationId;
-      private readonly _eipPublicIp = attrs.eipPublicIp;
-
-      public get eipPublicIp() {
-        if (!this._eipPublicIp) {
-          throw new Error('eipPublicIp is not provided for the imported Eip.');
-        }
-        return this._eipPublicIp;
-      };
+      public readonly eipPublicIp = attrs.eipPublicIp;
     }
     return new Import(scope, id);
   }
