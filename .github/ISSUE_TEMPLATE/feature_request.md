@@ -2,19 +2,37 @@
 name: Feature request
 about: Suggest an idea for this project
 title: ''
-labels: ''
+labels: enhancement
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+### Description
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+<!--
+Describe concisely your proposed feature and some backgrounds, for example:
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+* Problem to be solved with the feature
+* Use case of the feature
+-->
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+### Solution
+
+<!--
+Suggest your proposed solution, for example:
+
+* How to implement the feature
+* What you add or change: module, class, flag, etc.
+
+If you have any alternative solutions, please suggest them as well.
+-->
+
+### Other
+
+<!--
+Any other information, for example:
+
+* Related issues
+* Links
+* More detailed descriptions
+-->
