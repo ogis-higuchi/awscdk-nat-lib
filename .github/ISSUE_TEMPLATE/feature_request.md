@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: Feature Request
 about: Suggest an idea for this project
 title: ''
 labels: enhancement
@@ -10,7 +10,7 @@ assignees: ''
 ### Description
 
 <!--
-Describe concisely your proposed feature and some backgrounds, for example:
+Describe concisely your proposed feature and provide some background information, for example:
 
 * Problem to be solved with the feature
 * Use case of the feature
