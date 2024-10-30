@@ -1,56 +1,37 @@
 # Contributing Guidelines
 
-* 貢献を歓迎していることを伝える
-* このプロジェクトに興味を持ってくれたことに感謝！
+Thank you for your interest in contributing to the project.
 
-* 自己紹介
-	* 開発を主導しているオーナーは R&D 部門である
+The project is hosted in the OGIS-RI Research & Development Department on GitHub.
+We greatly appreciate your contributions.
+Before submitting any contributions, please take a moment to review these guidelines to ensure a smooth process.
 
 ## Types of Contributions
 
-* accept/not accept を列挙、明示する
-	* accept
-		* バグ報告
-		* 機能要望
-		* セキュリティ、脆弱性報告
-	* not accept
-		* いわゆる PR
-			* ソースコード
-			* ドキュメント
-		* 軽微でカジュアルな質問やディスカッション (coming soon)
-		* グランドデザイン、アーキテクチャー設計の改善提案 (T.B.D.)
+We are accepting the following contributions:
+
+* [Bug reports](#bug-reports)
+* [Feature requests](#feature-requests)
+* [Vulnerability reports](#vulnerability-reports)
+
+At this time, we cannot accept any [pull requests](#pull-requests) from external contributors.
 
 ## Bug Reports
 
-* Issue からあげてほしいことを伝える
-	* 同じ Issue が上がっていないか確認する
-	* テンプレートに沿って書くこと
+Before reporting a bug, please check the existing issues to see if it has already been reported.
+If it hasn't, please create an issue using the "Bug Report" template.
 
 ## Feature Requests
 
-* Issue からあげてほしいことを伝える
-	* 同じ Issue が上がっていないか確認する
-	* テンプレートに沿って書くこと
+Before requesting a feature, please check the existing issues to see if it has already been requested.
+If it hasn't, please create an issue using the "Feature Request" template.
 
 ## Vulnerability Reports
 
-* SECURITY.md を参照
+* See the [Security Policy](SECURITY.md)
 
 ## Pull Requests
 
-* PR は現在受け付けていないことを再びここで強調する
-	* ソースコードもドキュメントも
-	* 準備かでき次第受け付ける予定
-	* 現在は社員など限られた人だけにしている
-
-## Question (これはいったん外すかも)
-
-* "more details coming soon!"
-* Discussions などチャネルを検討している
-
-## Dev
-
-* "build": "npx projen build"
-* "eslint": "npx projen eslint"
-* "test": "npx projen test"
-* "projen": "npx projen
+At this time, we cannot accept any pull requests from external contributors.
+However, we are working to enable that.
+More details coming in the future.
