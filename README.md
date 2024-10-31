@@ -33,7 +33,7 @@ To create a NAT gateway and an EIP:
 // A NAT gateway is created in the public subnet
 declare const publicSubnet: IPublicSubnet;
 
-const natgw = new PublicNatGateway(this, 'PublicNatGateway', { publicSubnet })
+const natgw = new PublicNatGateway(this, 'PublicNatGateway', { publicSubnet });
 ```
 
 ### Default public NAT gateway
