@@ -5,12 +5,12 @@ AWS CDK constructs, mainly L2, for NAT devices and related resources.
 Here is the list of supported/unsupported resources at this time:
 
 * NAT devices
-  - [x] Public NAT gateway
-  - [ ] Private NAT gateway
-  - [ ] NAT instance
+  - :white_check_mark: Public NAT gateway
+  - :white_square_button: Private NAT gateway
+  - :white_square_button: NAT instance
 * Related resources
-  - [x] EIP
-  - [x] Route table
+  - :white_check_mark: EIP
+  - :white_check_mark: Route table
 
 ## Background
 
